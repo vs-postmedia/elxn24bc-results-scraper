@@ -1,66 +1,133 @@
-const fs = require('fs');
-const path = require('path');
-const axios = require('axios');
-const saveData = require('./scripts/save-data');
-const cheerioScraper = require('./scripts/cheerioScraper');
-const puppeteerScraper = require('./scripts/puppeteerScraper');
+// const fs = require('fs');
+// const path = require('path');
+import Axios from 'axios';
+import Papa from 'papaparse';
+import { tidy, arrange, desc, filter, groupBy, leftJoin, max, mutate, pivotWider, select, summarize } from '@tidyjs/tidy';
+import saveData from './scripts/save-data.js';
 
 // VARS
 const data_dir = 'data';
 const tmp_data_dir = 'tmp-data';
 const filename = 'data'; // temp file for data
-const urls = ['https://www.gasbuddy.com/GasPrices/British%20Columbia/']; // URL to scrape
+// const url = 'https://electionsbcenr.blob.core.windows.net/electionsbcenr/GE-2024-10-19_Candidate.csv.'; // URL to scrape
+const url = 'https://vs-postmedia-data.sfo2.digitaloceanspaces.com/elxn/elxn2024/elxn24-rest-results.csv';
 
 
-async function init(urls, useCheerio) {
-	let html;
-	// get first url in the list
-	const url = urls.shift();
-	// clean it up a bit to use as a filename
-	const cleanUrl = url.split('//')[1].replace(/\//g, '_');
-	const htmlFilepath = `${tmp_data_dir}/${cleanUrl}.html`;
+function joinPartyVotes(leadPartyData, allCandidates) {
+	let votesList = [];
 	
-	// check if we already have the file downloaded
-	const fileExists = fs.existsSync(htmlFilepath);
-	
-	if (!fileExists) {
-		// download the HTML from the web server
-		console.log(`Downloading HTML from ${url}...`);
-		// fetchDeaths & fetchCases & other files
-		html = await axios.get(url);
-		
-		// save the HTML to disk
-		try {
-			await fs.promises.writeFile(path.join(__dirname, htmlFilepath), html.data, {flag: 'wx'});
-		} catch(err) { 
-			console.log(err);
-		}
-	} else {
-		console.log(`Skipping download for ${url} since ${cleanUrl} already exists.`);
-	}
-	
-	// load local copy of html
-	html = await fs.readFileSync(htmlFilepath);
+	// get each party's pop vote for each riding
+	leadPartyData.forEach(d => {
+		const edVotes = tidy(
+			allCandidates,
+			filter(ed => ed['Electoral District Code'] === d['Electoral District Code']),
+			pivotWider({
+				namesFrom: 'Affiliation',
+				valuesFrom: 'Popular Vote Percentage'
+			})
+		);
 
-	// scrape downloaded file
-	const results = await processHTML(html, true);
+		votesList = [...votesList, ...edVotes];
+	});
 
-	// if there's more links, let's do it again!
-	if(urls.length > 0) {
-		console.log('Downloading next url...');
-		downloadHTML(urls, true);
-	} else {
-		saveData(results, path.join(__dirname, `${data_dir}/${filename}`), 'csv');
-	}
+	// join party popVote to leading party 
+	const joinedData = tidy(
+		leadPartyData,
+		leftJoin(
+			votesList,
+			{ by: 'Electoral District Code'}
+		)
+	);
+
+	return joinedData
 }
 
-// scrape & cache results
-async function processHTML(html, useCheerio) {
-	return (useCheerio) ? await cheerioScraper(html) : await puppeteerScraper(html);
+function getLeadParty(data) {
+	const results = tidy(
+	  data,
+	  // Convert '% of Popular Vote' to a number
+	  mutate({
+		'Popular Vote Percentage': d => parseFloat(d['% of Popular Vote'])
+	  }),
+	  // 
+	  groupBy(['Electoral District Code', 'Electoral District Name', 'FinalTotals', 'Initial Count Status'], [
+		summarize({
+		  maxVote: max('Popular Vote Percentage')
+		})
+	  ]),
+	  // Join full dataset back to get top candidate details
+	  mutate({
+		// name & party of candidate with highest popular vote
+		leadingParty: (d) => tidy(
+		  data,
+		  filter(r => r['Electoral District Code'] === d['Electoral District Code'] && parseFloat(r['% of Popular Vote']) === d.maxVote
+		  ),
+		  select([
+			'Candidate\'s Ballot Name',
+			'Affiliation'
+		  ])
+		)[0]
+	  }),
+	  select([
+		'Electoral District Code',
+		'Electoral District Name',
+		'leadingParty',
+		'maxVote',
+		'FinalTotals',
+		'Initial Count Status'
+	  ]),
+	  mutate({
+		'leadingCandidate': d => d.leadingParty !== undefined ? d.leadingParty['Candidate\'s Ballot Name'] : null,
+		'leadingParty': d =>  d.leadingParty !== undefined ? d.leadingParty['Affiliation'] : null,
+		'popVote': d => d.maxVote,
+		'status': d => d['Initial Count Status']
+	  }),
+	  select([
+		'Electoral District Code',
+		'Electoral District Name',
+		'leadingParty',
+		'leadingCandidate',
+		'popVote',
+		'FinalTotals',
+		'status'
+	  ])
+	);
+  
+	return results;
+}
+
+async function init(url) {
+	const results = await Axios.get(url)
+		.then(resp => Papa.parse(resp.data, { header: true }))
+		.catch(err => {
+			console.error(err)
+		});
+
+
+	// get lead party/candidate for each riding
+	const leadParty = getLeadParty(results.data);
+
+	// create a lookup table of Parties popvote for each riding
+	const partyVoteLookup = tidy(
+		results.data,
+		mutate({
+			'Popular Vote Percentage': d => parseFloat(d['% of Popular Vote'])
+		}),
+		select([
+			'Electoral District Code',
+			'Affiliation',
+			'Popular Vote Percentage'
+		])
+	);
+
+	// add back the full list of candidates
+	const joinedData = joinPartyVotes(leadParty, partyVoteLookup)
+
+	await saveData(joinedData, { filepath: `./data/output/current-results`, format: 'csv', append: false });
 }
 
 // kick isht off!!!
-init(urls, true); // set 'useCheerio' to false to run puppeteer
+init(url);
 
 
 
