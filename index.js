@@ -129,10 +129,9 @@ async function processMapData(data, leadParty, metricName) {
 	);
 
 	// add back the full list of candidates
-	const joinedData = joinPartyVotes(leadParty, partyVoteLookup)
+	const joinedData = joinPartyVotes(leadParty, partyVoteLookup);
 
-	// save all our data
-	await saveData(joinedData, { filepath: mapOutputFile, format: 'csv', append: false });
+	return joinedData;
 }
 
 async function processSeatData(data, metricName) {
@@ -158,10 +157,11 @@ async function processSeatData(data, metricName) {
 		})
 	);
 
-	await saveData(pivotSeats, { filepath: seatsOutputFile, format: 'csv', append: false });
+	return pivotSeats;
 }
 
 async function init(url) {
+	console.log(`fetching ${url}`)
 	// fetch data
 	const results = await Axios.get(url)
 		.then(resp => Papa.parse(resp.data, { header: true }))
@@ -175,10 +175,15 @@ async function init(url) {
 	const leadParty = getLeadParty(results);
 	
 	// process data for total seat countz
-	processSeatData(leadParty, 'leadingParty');
+	const seatData = processSeatData(leadParty, 'leadingParty');
 
 	// process riding level data for map
-	processMapData(results, leadParty, 'Affiliation');
+	const mapData = processMapData(results, leadParty, 'Affiliation');
+
+
+	// save all our data
+	await saveData(seatData, { filepath: seatsOutputFile, format: 'csv', append: false });
+	await saveData(mapData, { filepath: mapOutputFile, format: 'csv', append: false });
 }
 
 // kick isht off!!!
