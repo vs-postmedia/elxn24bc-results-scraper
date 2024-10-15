@@ -64,14 +64,21 @@ function joinPartyVotes(leadPartyData, allCandidates) {
 		votesList = [...votesList, ...edVotes];
 	});
 
+	console.log(votesList)
+
 	// join party popVote to leading party 
 	const joinedData = tidy(
 		leadPartyData,
+		mutate({
+			leadingParty: d => assignIndyParty(d, 'leadingParty'),
+		}),
 		leftJoin(
 			votesList,
 			{ by: 'Electoral District Code'}
 		)
 	);
+
+	console.log(joinedData)
 
 	return joinedData
 }
@@ -112,7 +119,7 @@ function getLeadParty(data) {
 	  ]),
 	  mutate({
 		'leadingCandidate': d => d.leadingParty !== undefined ? d.leadingParty['Candidate\'s Ballot Name'] : null,
-		'leadingParty': d =>  d.leadingParty !== undefined ? d.leadingParty['Affiliation'] : null,
+		'leadingParty': d => d.leadingParty !== undefined ? d.leadingParty['Affiliation'] : null,
 		'popVote': d => d.maxVote,
 	  }),
 	  select([
