@@ -1,7 +1,7 @@
 
 import Axios from 'axios';
 import Papa from 'papaparse';
-import { tidy, arrange, desc, filter, groupBy, leftJoin, max, mutate, pivotWider, select, sum, summarize } from '@tidyjs/tidy';
+import { tidy, arrange, count, desc, filter, groupBy, leftJoin, max, mutate, pivotWider, select, sum, summarize } from '@tidyjs/tidy';
 import saveData from './scripts/save-data.js';
 
 // VARS
@@ -11,16 +11,36 @@ const seatsOutputFile = `./data/output/current-results-seats`;
 const url = 'https://vs-postmedia-data.sfo2.digitaloceanspaces.com/elxn/elxn2024/elxn24-rest-results.csv';
 
 
+function assignIndyParty(d, metricName) {
+	let party;
+	switch (d[metricName]) {
+		case 'Independent':
+			party = 'Independent/Unaffiliated';
+			break;
+		case '':
+			party = 'Independent/Unaffiliated';
+			break;
+		case ' ':
+			party = 'Independent/Unaffiliated';
+			break;
+		default:
+			party = d[metricName];
+			break;
+	}
+
+	return party;
+}
+
 function joinPartyVotes(leadPartyData, allCandidates) {
 	let votesList = [];
 	
-	// get each party's pop vote for each riding
+	// get each party's popVote for each riding
 	leadPartyData.forEach(d => {
 		const edVotes = tidy(
 			allCandidates,
 			filter(ed => ed['Electoral District Code'] === d['Electoral District Code']),
 			pivotWider({
-				namesFrom: 'Affiliation',
+				namesFrom: 'party',
 				valuesFrom: 'Popular Vote Percentage'
 			})
 		);
@@ -93,16 +113,17 @@ function getLeadParty(data) {
 	return results;
 }
 
-async function processMapData(data, leadParty) {
+async function processMapData(data, leadParty, metricName) {
 	// create a lookup table of Parties popvote for each riding
 	const partyVoteLookup = tidy(
 		data,
 		mutate({
+			party: d => assignIndyParty(d, metricName),
 			'Popular Vote Percentage': d => parseFloat(d['% of Popular Vote'])
 		}),
 		select([
 			'Electoral District Code',
-			'Affiliation',
+			'party',
 			'Popular Vote Percentage'
 		])
 	);
@@ -114,39 +135,50 @@ async function processMapData(data, leadParty) {
 	await saveData(joinedData, { filepath: mapOutputFile, format: 'csv', append: false });
 }
 
-async function processSeatData(data) {
+async function processSeatData(data, metricName) {
 	const seats = tidy(
 		data,
-		// we only want completed seats
-		// filter(d => d['Initial Count Status'] === 'Complete'),
-		// 
-		groupBy(['Affiliation', 'Initial Count Status']), 
+		groupBy(['leadingParty']),
+		mutate({
+			party: d => assignIndyParty(d, metricName)
+		}),
 		summarize({
-			seats: count('Popular Vote Percentage')
+			seats: count('party')
+		})
+	)[0];
+
+	const pivotSeats = tidy(
+		seats.seats,
+		mutate({
+			region: 'B.C.'
+		}),
+		pivotWider({
+			namesFrom: 'party',
+			valuesFrom: 'n'
 		})
 	);
 
-
-	// save all our data
-	await saveData(seats, { filepath: seatsOutputFile, format: 'csv', append: false });
+	await saveData(pivotSeats, { filepath: seatsOutputFile, format: 'csv', append: false });
 }
 
 async function init(url) {
 	// fetch data
 	const results = await Axios.get(url)
 		.then(resp => Papa.parse(resp.data, { header: true }))
+		// filter out empty rows
+		.then(data => data.data.filter(d => d['Electoral District Code'].length > 0))
 		.catch(err => {
 			console.error(err)
 		});
 	
 	// get lead party/candidate for each riding
-	const leadParty = getLeadParty(results.data);
+	const leadParty = getLeadParty(results);
+	
+	// process data for total seat countz
+	processSeatData(leadParty, 'leadingParty');
 
-	// process data for map
-	processMapData(results.data, leadParty);
-
-	// process data for total seat count
-	// processSeatData(leadParty);
+	// process riding level data for map
+	processMapData(results, leadParty, 'Affiliation');
 }
 
 // kick isht off!!!
