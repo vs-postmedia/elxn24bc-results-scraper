@@ -1,94 +1,12 @@
-Electoral District Code,Electoral District Name,leadingParty,leadingCandidate,leadingPopVote,FinalTotals,colorCategory,NDP,Conservative,Green,Independent,Other
-ABM,Abbotsford-Mission,Conservative,Reann Gasper,50.25,15 of 16,Leading Conservative,49.75,50.25,0,0,0
-ABS,Abbotsford South,Independent,Amandeep Singh,33.46,17 of 18,Leading Independent,33.32,33.22,0,33.46,0
-ABW,Abbotsford West,Independent,James Davison,33.45,15 of 16,Leading Independent,33.34,33.21,0,33.45,0
-BDS,Boundary-Similkameen,NDP,Roly Russell,25.28,21 of 22,Leading NDP,25.28,24.61,24.96,25.15,0
-BLS,Bulkley Valley-Stikine,Other,Rod Taylor,25.39,23 of 24,Leading Other,25.26,24.54,24.81,0,25.39
-BNC,Burnaby Centre,Conservative,Dharam Kajal,50.16,10 of 11,Leading Conservative,49.84,50.16,0,0,0
-BNE,Burnaby East,Conservative,Simon Chandler,33.64,11 of 12,Leading Conservative,33.25,33.64,33.12,0,0
-BNN,Burnaby-New Westminster,NDP,Raj Chouhan,33.61,12 of 13,Leading NDP,33.61,33.39,0,33,0
-BNO,Burnaby North,NDP,Janet Routledge,33.68,12 of 13,Leading NDP,33.68,33.12,0,33.2,0
-BNS,Burnaby South-Metrotown,NDP,Paul Choi,20.8,0 of 13,Leading NDP,20.8,19.43,19.72,19.85,0
-CBC,Cariboo-Chilcotin,Conservative,Lorne Doerkson,50.13,40 of 41,Leading Conservative,49.87,50.13,0,0,0
-CHC,Chilliwack-Cultus Lake,NDP,Kelli Paddon,50,14 of 15,Leading NDP,50,50,0,0,0
-CHN,Chilliwack North,Green,Tim Cooper,25.21,15 of 16,Leading Green,24.71,25.03,25.21,25.05,0
-CLR,Columbia River-Revelstoke,Conservative,Scott McInnis,33.45,18 of 19,Leading Conservative,33.38,33.45,33.17,0,0
-CQB,Coquitlam-Burke Mountain,Conservative,Stephen Frolek,50.03,12 of 13,Leading Conservative,49.97,50.03,0,0,0
-CQM,Coquitlam-Maillardville,Green,Nicola Spurling,25.17,16 of 17,Leading Green,24.79,25.03,25.17,25.01,0
-CRC,Courtenay-Comox,Independent,Devin Howell,20.32,17 of 18,Leading Independent,19.8,19.78,19.93,20.32,0
-CWV,Cowichan Valley,Independent,Jon Coleman,20.34,19 of 20,Leading Other,20.12,19.84,19.85,19.86,0
-DLN,Delta North,Green,Nick Dickinson-Wilde,25.14,11 of 12,Leading Green,24.95,25.09,25.14,0,24.83
-DLS,Delta South,NDP,Jason McCormick,50.48,14 of 15,Leading NDP,50.48,49.52,0,0,0
-ESC,Esquimalt-Colwood,Conservative,John Wilson,33.41,16 of 17,Leading Conservative,33.34,33.41,33.26,0,0
-FRN,Fraser-Nicola,Green,Jonah Timms,33.4,31 of 32,Leading Green,33.3,33.3,33.4,0,0
-JFM,Juan de Fuca-Malahat,Green,David Evans,33.47,15 of 16,Leading Green,33.18,33.35,33.47,0,0
-KAC,Kamloops Centre,NDP,Kamal Grewal,33.57,15 of 16,Leading NDP,33.57,33.37,33.06,0,0
-KAN,Kamloops-North Thompson,Green,Tristan Cavers,33.49,31 of 32,Leading Green,33.3,33.2,33.49,0,0
-KEC,Kelowna Centre,Conservative,Kristina Loewen,25.07,14 of 15,Leading Conservative,24.98,25.07,24.93,25.02,0
-KLC,Kelowna-Lake Country-Coldstream,Conservative,Tara Armstrong,25.27,16 of 17,Leading Conservative,25.1,25.27,24.75,24.88,0
-KLM,Kelowna-Mission,NDP,Harpreet Badohal,25.09,17 of 18,Leading NDP,25.09,24.97,24.9,25.04,0
-KOC,Kootenay Central,Independent,Corinne Mori,25.17,22 of 23,Leading Independent,25.04,25.11,24.68,25.17,0
-KOM,Kootenay-Monashee,NDP,Steve Morissette,33.55,18 of 19,Leading NDP,33.55,33.08,33.37,0,0
-KOR,Kootenay-Rockies,NDP,Sam Atwal,25.29,18 of 19,Leading NDP,25.29,24.86,25.25,24.6,0
-LAO,Ladysmith-Oceanside,Green,Laura Ferreira,25.1,18 of 19,Leading Green,24.89,25.09,25.1,24.92,0
-LFH,Langford-Highlands,Conservative,Mike Harris,33.58,12 of 13,Leading Conservative,33.28,33.58,33.13,0,0
-LLA,Langley-Abbotsford,NDP,John Aldag,20.1,16 of 17,Leading NDP,20.1,19.88,20.08,19.97,19.98
-LWG,Langley-Walnut Grove,Green,Rylee Mac Lean,25.14,14 of 15,Leading Green,24.96,25,25.14,24.9,0
-LWI,Langley-Willowbrook,Green,Petrina Arnason,33.4,14 of 15,Leading Green,33.35,33.25,33.4,0,0
-MAE,Maple Ridge East,Conservative,Lawrence Mok,33.48,16 of 17,Leading Conservative,33.04,33.48,33.48,0,0
-MAP,Maple Ridge-Pitt Meadows,NDP,Lisa Beare,50.3,15 of 16,Leading NDP,50.3,49.7,0,0,0
-MPR,Mid Island-Pacific Rim,Green,Ross Reid,33.49,22 of 23,Leading Green,33.19,33.33,33.49,0,0
-NAI,Nanaimo-Gabriola Island,NDP,Sheila Malcolmson,33.59,18 of 19,Leading NDP,33.59,33.09,33.32,0,0
-NAL,Nanaimo-Lantzville,Conservative,Gwen O'Mahony,33.42,14 of 15,Leading Conservative,33.22,33.42,33.36,0,0
-NEC,Nechako Lakes,Conservative,John Rustad,33.62,9 of 26,Leading Conservative,33.2,33.62,33.18,0,0
-NMC,New Westminster-Coquitlam,Conservative,Ndellie Massey,33.37,14 of 15,Leading Conservative,33.29,33.37,33.34,0,0
-NOH,North Coast-Haida Gwaii,Conservative,Christopher Jason Sankey,50.13,27 of 28,Leading Conservative,49.87,50.13,0,0,0
-NOI,North Island,NDP,Michele Babchuk,33.83,32 of 33,Leading NDP,33.83,33.24,32.92,0,0
-NVL,North Vancouver-Lonsdale,NDP,Bowinn Ma,50.21,17 of 18,Leading NDP,50.21,49.79,0,0,0
-NVS,North Vancouver-Seymour,Green,Subhadarshi Tripathy,25.28,19 of 20,Leading Green,25.04,24.82,25.28,24.86,0
-OBG,Oak Bay-Gordon Head,Green,Lisa Gunderson,33.38,16 of 17,Leading Green,33.33,33.29,33.38,0,0
-PCN,Peace River North,Independent,Dan Davies,33.72,19 of 20,Leading Independent,33.07,33.2,0,33.72,0
-PCS,Peace River South,NDP,Marshall Bigsby,33.36,13 of 14,Leading NDP,33.36,33.35,0,33.29,0
-PES,Penticton-Summerland,Green,Bradley Bartsch,16.86,16 of 17,Leading Green,16.52,16.66,16.86,16.7,0
-POC,Port Coquitlam,Green,Adam Bremner-Akins,25.14,17 of 18,Leading Green,25.06,24.74,25.14,0,25.07
-POM,Port Moody-Burquitlam,Green,Samantha Agtarap,33.46,18 of 19,Leading Green,33.27,33.27,33.46,0,0
-POR,Powell River-Sunshine Coast,Green,Chris Hergesheimer,25.19,15 of 20,Leading Green,24.73,25.15,25.19,24.93,0
-PRM,Prince George-Mackenzie,Independent,Rachael Weber,25.32,17 of 18,Leading Other,24.59,25.31,24.78,25.32,0
-PRO,Prince George-North Cariboo,NDP,Denice Bardua,25.11,24 of 25,Leading NDP,25.11,25,24.81,25.08,0
-PRV,Prince George-Valemount,NDP,Clay Pountney,33.55,22 of 23,Leading NDP,33.55,32.95,33.5,0,0
-RCB,Richmond-Bridgeport,Independent,Glynnis Hoi Sum Chan,20.08,13 of 14,Leading Independent,19.89,20.06,19.98,19.98,0
-RCC,Richmond Centre,Independent,Sunny Ho,20.16,11 of 12,Leading Independent,19.99,19.86,0,20.15,0
-RCQ,Richmond-Queensborough,Independent,Errol E. Povah,25.3,14 of 15,Leading Independent,24.71,24.99,0,25,0
-RCS,Richmond-Steveston,Conservative,Michelle Mollineaux,26.63,0 of 15,Leading Conservative,24.44,26.63,24.55,24.38,0
-SAN,Saanich North and the Islands,Conservative,David Busch,25.05,21 of 22,Leading Conservative,25.02,25.05,24.92,25.01,0
-SAS,Saanich South,NDP,Lana Popham,33.56,18 of 19,Leading NDP,33.56,33.17,33.28,0,0
-SHU,Salmon Arm-Shuswap,Independent,Greg McCune,20.05,27 of 28,Leading Independent,20,19.97,19.97,20,0
-SKE,Skeena,Other,Irwin Jeffrey,25.35,18 of 19,Leading Other,25.11,24.69,24.85,0,25.35
-SRC,Surrey City Centre,Conservative,Zeeshan Wahla,20.24,11 of 12,Leading Conservative,20,20.24,19.94,19.79,20.02
-SRD,Surrey-Cloverdale,NDP,Mike Starchuk,25.18,13 of 14,Leading NDP,25.18,24.88,25.16,0,24.78
-SRF,Surrey-Fleetwood,Conservative,Avtar Gill,33.51,12 of 13,Leading Conservative,33.18,33.51,33.31,0,0
-SRG,Surrey-Guildford,NDP,Garry Begg,25.3,11 of 12,Leading NDP,25.3,25.3,24.68,24.71,0
-SRN,Surrey-Newton,NDP,Jessie Sunner,20.26,12 of 13,Leading NDP,20.26,19.96,0,20.02,19.82
-SUN,Surrey North,Other,Kiran Hundal,20.18,11 of 12,Leading Other,20.01,19.93,19.95,19.93,20.18
-SUP,Surrey-Panorama,Conservative,Bryan Tepper,33.53,9 of 10,Leading Conservative,33.17,33.53,0,0,33.29
-SUR,Surrey-Serpentine River,NDP,Baltej Singh Dhillon,33.54,12 of 13,Leading NDP,33.54,33.1,0,33.36,0
-SUS,Surrey South,Conservative,Brent Chapman,50.22,12 of 13,Leading Conservative,49.78,50.22,0,0,0
-SWR,Surrey-White Rock,NDP,Darryl Walker,33.67,5 of 16,Leading NDP,33.67,33.43,0,0,32.91
-VFV,Vancouver-Fraserview,NDP,George Chow,33.45,15 of 16,Leading NDP,33.45,33.14,33.41,0,0
-VHA,Vancouver-Hastings,NDP,Niki Sharma,25.2,15 of 16,Leading NDP,25.2,24.86,25.11,24.83,0
-VKE,Vancouver-Kensington,NDP,Mable Elmore,33.67,11 of 12,Leading NDP,33.67,33.07,33.26,0,0
-VLA,Vancouver-Langara,Conservative,Bryan Breguet,33.44,10 of 11,Leading Conservative,33.23,33.44,33.33,0,0
-VLM,Vancouver-Little Mountain,Conservative,John Coupar,33.39,14 of 15,Leading Conservative,33.38,33.39,33.24,0,0
-VNP,Vancouver-Point Grey,Green,Devyani Singh,33.54,13 of 14,Leading Green,33.36,33.1,33.54,0,0
-VNQ,Vancouver-Quilchena,Independent,Caroline Ying-Mei Wang,25.06,13 of 14,Leading Independent,24.95,24.97,25.03,25.06,0
-VNR,Vancouver-Renfrew,Conservative,Tom Ikonomou,33.74,13 of 14,Leading Conservative,32.95,33.74,33.31,0,0
-VNS,Vancouver-South Granville,NDP,Brenda Bailey,33.44,15 of 16,Leading NDP,33.44,33.29,33.27,0,0
-VNT,Vancouver-Strathcona,Conservative,Scott Muller,25.27,16 of 17,Leading Conservative,24.95,25.27,24.93,0,24.85
-VNW,Vancouver-West End,Green,Eoin O'Dwyer,25.15,12 of 13,Leading Green,24.95,24.94,25.15,24.96,0
-VNY,Vancouver-Yaletown,NDP,Terry Yung,33.5,12 of 13,Leading NDP,33.5,33.15,33.35,0,0
-VRL,Vernon-Lumby,Independent,Kevin Acton,25.03,17 of 18,Leading Other,24.98,24.99,0,25.03,25
-VTB,Victoria-Beacon Hill,NDP,Grace Lore,34.54,0 of 17,Leading NDP,34.54,31.27,34.18,0,0
-VTS,Victoria-Swan Lake,Conservative,Tim Taylor,25.15,15 of 16,Leading Conservative,25.02,25.15,24.93,0,24.89
-WKP,West Kelowna-Peachland,Independent,Stephen Johnston,33.53,15 of 16,Leading Other,33.41,33.05,0,33.53,0
-WVC,West Vancouver-Capilano,Green,Archie Kaario,25.31,13 of 14,Leading Green,24.98,25,25.31,24.71,0
-WVS,West Vancouver-Sea to Sky,NDP,Jen Ford,33.49,17 of 18,Leading NDP,33.49,33.29,33.22,0,0
+Electoral District Code,Electoral District Name,leadingParty,leadingCandidate,leadingPopVote,FinalTotals,colorCategory,Independent,Conservative,Green,NDP,Other
+CWV,Cowichan Valley,Independent,Jon Coleman,20.34,19 of 20,Leading Other,19.86,19.84,19.85,20.12,0
+ESC,Esquimalt-Colwood,Conservative,John Wilson,33.41,16 of 17,Leading Conservative,0,33.41,33.26,33.34,0
+JFM,Juan de Fuca-Malahat,Green,David Evans,33.47,15 of 16,Leading Green,0,33.35,33.47,33.18,0
+LAO,Ladysmith-Oceanside,Green,Laura Ferreira,25.1,18 of 19,Leading Green,24.92,25.09,25.1,24.89,0
+LFH,Langford-Highlands,Conservative,Mike Harris,33.58,12 of 13,Leading Conservative,0,33.58,33.13,33.28,0
+MPR,Mid Island-Pacific Rim,Green,Ross Reid,33.49,22 of 23,Leading Green,0,33.33,33.49,33.19,0
+OBG,Oak Bay-Gordon Head,Green,Lisa Gunderson,33.38,16 of 17,Leading Green,0,33.29,33.38,33.33,0
+SAN,Saanich North and the Islands,Conservative,David Busch,25.05,21 of 22,Leading Conservative,25.01,25.05,24.92,25.02,0
+SAS,Saanich South,NDP,Lana Popham,33.56,18 of 19,Leading NDP,0,33.17,33.28,33.56,0
+VTB,Victoria-Beacon Hill,NDP,Grace Lore,34.54,0 of 17,Leading NDP,0,31.27,34.18,34.54,0
+VTS,Victoria-Swan Lake,Conservative,Tim Taylor,25.15,15 of 16,Leading Conservative,0,25.15,24.93,25.02,24.89
