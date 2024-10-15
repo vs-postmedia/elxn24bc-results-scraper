@@ -40,6 +40,30 @@ function assignIndyParty(d, metricName) {
 	return party;
 }
 
+function assignMapColorCategory(party, status) {
+	let colorCategory;
+
+	switch (party) {
+		case 'Conservative Party':
+			colorCategory = status !== 'Complete' ? 'Leading Conservative': "Conservative";
+			break;
+		case 'BC NDP':
+			colorCategory = status !== 'Complete' ? 'Leading NDP': "NDP";
+			break;
+		case 'BC Green Party':
+			colorCategory = status !== 'Complete' ? "Leading Green": 'Green';
+			break;
+		case 'Independent':
+			colorCategory = status !== 'Complete' ? "Leading Independent": 'Independent';
+			break;
+		default:
+			colorCategory = status !== 'Complete' ? "Leading Other": 'Other';
+			break;
+	}
+
+	return colorCategory;
+}
+
 function joinPartyVotes(leadPartyData, allCandidates) {
 	let votesList = [];
 	
@@ -99,7 +123,7 @@ function getLeadParty(data) {
 	  // Join full dataset back to get top candidate details
 	  mutate({
 		// name & party of candidate with highest popular vote
-		leadingParty: (d) => tidy(
+		leadingParty: d => tidy(
 		  data,
 		  filter(r => r['Electoral District Code'] === d['Electoral District Code'] && parseFloat(r['% of Popular Vote']) === d.maxVote
 		  ),
@@ -120,16 +144,17 @@ function getLeadParty(data) {
 	  mutate({
 		'leadingCandidate': d => d.leadingParty !== undefined ? d.leadingParty['Candidate\'s Ballot Name'] : null,
 		'leadingParty': d => d.leadingParty !== undefined ? d.leadingParty['Affiliation'] : null,
-		'popVote': d => d.maxVote,
+		'leadingPopVote': d => d.maxVote,
+		'colorCategory': d => assignMapColorCategory(d.leadingParty, d['Initital Count Status'])
 	  }),
 	  select([
 		'Electoral District Code',
 		'Electoral District Name',
 		'leadingParty',
 		'leadingCandidate',
-		'popVote',
+		'leadingPopVote',
 		'FinalTotals',
-		'Initial Count Status'
+		'colorCategory'
 	  ])
 	);
   
