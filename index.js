@@ -238,9 +238,8 @@ async function init(url) {
 	// save all our data
 	await saveData(seatData, { filepath: seatsOutputFile, format: 'csv', append: false });
 	await saveData(mapData, { filepath: mapOutputFile, format: 'csv', append: false });
-	await saveData(mapData, { filepath: mapOutputFile, format: 'csv', append: false });
-	await saveData(mapData, { filepath: metroOutputFile, format: 'csv', append: false });
-	await saveData(mapData, { filepath: crdOutputFile, format: 'csv', append: false });
+	await saveData(metroData, { filepath: metroOutputFile, format: 'csv', append: false });
+	await saveData(crdData, { filepath: crdOutputFile, format: 'csv', append: false });
 }
 
 // kick isht off!!!
