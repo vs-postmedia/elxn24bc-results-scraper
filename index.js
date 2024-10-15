@@ -65,8 +65,6 @@ function joinPartyVotes(leadPartyData, allCandidates) {
 		votesList = [...votesList, ...edVotes];
 	});
 
-	console.log(votesList)
-
 	// join party popVote to leading party 
 	const joinedData = tidy(
 		leadPartyData,
@@ -193,6 +191,9 @@ async function init(url) {
 	
 	// process data for total seat countz
 	const seatData = await processSeatData(leadParty, 'leadingParty');
+
+		console.log(leadParty)
+	console.log(seatData);
 
 	// process riding level data for map
 	const mapData = await processMapData(results, leadParty, 'Affiliation');
