@@ -1,12 +1,12 @@
 Electoral District Code,Electoral District Name,leadingParty,leadingCandidate,leadingPopVote,FinalTotals,colorCategory,Independent,Conservative,Green,NDP,Other
-CWV,Cowichan Valley,Independent,Jon Coleman,20.34,19 of 20,Leading Other,19.86,19.84,19.85,20.12,0
-ESC,Esquimalt-Colwood,Conservative,John Wilson,33.41,16 of 17,Leading Conservative,0,33.41,33.26,33.34,0
-JFM,Juan de Fuca-Malahat,Green,David Evans,33.47,15 of 16,Leading Green,0,33.35,33.47,33.18,0
-LAO,Ladysmith-Oceanside,Green,Laura Ferreira,25.1,18 of 19,Leading Green,24.92,25.09,25.1,24.89,0
-LFH,Langford-Highlands,Conservative,Mike Harris,33.58,12 of 13,Leading Conservative,0,33.58,33.13,33.28,0
-MPR,Mid Island-Pacific Rim,Green,Ross Reid,33.49,22 of 23,Leading Green,0,33.33,33.49,33.19,0
-OBG,Oak Bay-Gordon Head,Green,Lisa Gunderson,33.38,16 of 17,Leading Green,0,33.29,33.38,33.33,0
-SAN,Saanich North and the Islands,Conservative,David Busch,25.05,21 of 22,Leading Conservative,25.01,25.05,24.92,25.02,0
-SAS,Saanich South,NDP,Lana Popham,33.56,18 of 19,Leading NDP,0,33.17,33.28,33.56,0
-VTB,Victoria-Beacon Hill,NDP,Grace Lore,34.54,0 of 17,Leading NDP,0,31.27,34.18,34.54,0
-VTS,Victoria-Swan Lake,Conservative,Tim Taylor,25.15,15 of 16,Leading Conservative,0,25.15,24.93,25.02,24.89
+CWV,Cowichan Valley,Independent,Jon Coleman,20.34,19 of 20,Other lead,19.85,19.83,19.85,20.12,0
+ESC,Esquimalt-Colwood,Conservative,John Wilson,33.41,16 of 17,Conservative lead,0,33.41,33.26,33.34,0
+JFM,Juan de Fuca-Malahat,Green,David Evans,33.47,15 of 16,Green lead,0,33.35,33.47,33.18,0
+LAO,Ladysmith-Oceanside,Green,Laura Ferreira,25.1,18 of 19,Green lead,24.92,25.09,25.1,24.89,0
+LFH,Langford-Highlands,Conservative,Mike Harris,33.58,12 of 13,Conservative lead,0,33.58,33.13,33.29,0
+MPR,Mid Island-Pacific Rim,Green,Ross Reid,33.49,22 of 23,Green lead,0,33.33,33.49,33.18,0
+OBG,Oak Bay-Gordon Head,Green,Lisa Gunderson,33.38,16 of 17,Green lead,0,33.3,33.38,33.32,0
+SAN,Saanich North and the Islands,Conservative,David Busch,25.05,21 of 22,Conservative lead,25.01,25.05,24.92,25.02,0
+SAS,Saanich South,NDP,Lana Popham,33.56,18 of 19,NDP lead,0,33.17,33.27,33.56,0
+VTB,Victoria-Beacon Hill,NDP,Grace Lore,33.56,13 of 17,NDP lead,0,33.29,33.15,33.56,0
+VTS,Victoria-Swan Lake,Conservative,Tim Taylor,25.15,15 of 16,Conservative lead,0,25.15,24.94,25.03,24.89
