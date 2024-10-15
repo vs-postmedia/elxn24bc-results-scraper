@@ -92,8 +92,6 @@ function joinPartyVotes(leadPartyData, allCandidates) {
 		votesList = [...votesList, ...edVotes];
 	});
 
-	console.log(votesList)
-
 	// join party popVote to leading party 
 	const joinedData = tidy(
 		leadPartyData,
@@ -105,8 +103,6 @@ function joinPartyVotes(leadPartyData, allCandidates) {
 			{ by: 'Electoral District Code'}
 		)
 	);
-
-	console.log(joinedData)
 
 	return joinedData
 }
@@ -189,10 +185,12 @@ async function processSeatData(data, metricName) {
 		data,
 		groupBy(['leadingParty']),
 		mutate({
-			party: d => assignIndyParty(d, metricName)
+			'colorCategory': d => assignMapColorCategory(d.leadingParty, d['Initital Count Status']),
+			// party: d => assignIndyParty(d, metricName)
 		}),
 		summarize({
-			seats: count('party')
+			// seats: count('party')
+			seats: count('colorCategory')
 		})
 	)[0];
 
@@ -202,7 +200,7 @@ async function processSeatData(data, metricName) {
 			region: 'B.C.'
 		}),
 		pivotWider({
-			namesFrom: 'party',
+			namesFrom: 'colorCategory',
 			valuesFrom: 'n'
 		})
 	);
@@ -230,10 +228,9 @@ async function init(url) {
 	// process riding level data for map
 	const mapData = await processMapData(results, leadParty, 'Affiliation');
 
-	// filter for metro & crd regions
+	// filter for metro & crd region maps
 	const metroData = mapData.filter(d => metroRidings.includes(d['Electoral District Code']));
 	const crdData = mapData.filter(d => crdRidings.includes(d['Electoral District Code']));
-
 
 	// save all our data
 	await saveData(seatData, { filepath: seatsOutputFile, format: 'csv', append: false });
