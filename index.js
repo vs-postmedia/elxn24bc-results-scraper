@@ -192,7 +192,7 @@ async function init(url) {
 	// process data for total seat countz
 	const seatData = await processSeatData(leadParty, 'leadingParty');
 
-		console.log(leadParty)
+	console.log(leadParty)
 	console.log(seatData);
 
 	// process riding level data for map
