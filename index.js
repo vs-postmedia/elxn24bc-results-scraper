@@ -7,10 +7,14 @@ import saveData from './scripts/save-data.js';
 // VARS
 const mapOutputFile = `./data/output/current-results-map`;
 const seatsOutputFile = `./data/output/current-results-seats`;
+const crdOutputFile = `./data/output/current-results-map-crd`;
+const metroOutputFile = `./data/output/current-results-map-metro`;
 const url = 'https://electionsbcenr.blob.core.windows.net/electionsbcenr/GE-2024-10-19_Candidate.csv'; // URL to scrape
 // const url = 'https://vs-postmedia-data.sfo2.digitaloceanspaces.com/elxn/elxn2024/elxn24-rest-results.csv';
 
 const partyNames = ['Conservative', 'NDP', 'Green', 'Independent', 'Other'];
+const crdRidings = ['CWV','ESC','JFM','LAO','LFH','OBG','SAN','SAS','VTB','VTS','MPR'];
+const metroRidings = ['ABM','ABS','ABW','BNC','BNE','BNN','BNO','BNS','CHC','CHN','CQB','CQM','DLN','DLS','LLA','LWG','LWI','MAE','MAP','NMC','NVL','NVS','POC','POM','RCB','RCC','RCQ','RCS','SRC','SRD','SRF','SRG','SRN','SUN','SUP','SUR','SUS','SWR','VFV','VHA','VKE','VLA','VLM','VNP','VNQ','VNR','VNS','VNT','VNW','VNY','VTB','VTS','WVC','WVS','FRN'];
 
 function assignIndyParty(d, metricName) {
 	let party;
@@ -226,10 +230,17 @@ async function init(url) {
 	// process riding level data for map
 	const mapData = await processMapData(results, leadParty, 'Affiliation');
 
+	// filter for metro & crd regions
+	const metroData = mapData.filter(d => metroRidings.includes(d['Electoral District Code']));
+	const crdData = mapData.filter(d => crdRidings.includes(d['Electoral District Code']));
+
 
 	// save all our data
 	await saveData(seatData, { filepath: seatsOutputFile, format: 'csv', append: false });
 	await saveData(mapData, { filepath: mapOutputFile, format: 'csv', append: false });
+	await saveData(mapData, { filepath: mapOutputFile, format: 'csv', append: false });
+	await saveData(mapData, { filepath: metroOutputFile, format: 'csv', append: false });
+	await saveData(mapData, { filepath: crdOutputFile, format: 'csv', append: false });
 }
 
 // kick isht off!!!
