@@ -7,24 +7,34 @@ import saveData from './scripts/save-data.js';
 // VARS
 const mapOutputFile = `./data/output/current-results-map`;
 const seatsOutputFile = `./data/output/current-results-seats`;
-// const url = 'https://electionsbcenr.blob.core.windows.net/electionsbcenr/GE-2024-10-19_Candidate.csv'; // URL to scrape
-const url = 'https://vs-postmedia-data.sfo2.digitaloceanspaces.com/elxn/elxn2024/elxn24-rest-results.csv';
+const url = 'https://electionsbcenr.blob.core.windows.net/electionsbcenr/GE-2024-10-19_Candidate.csv'; // URL to scrape
+// const url = 'https://vs-postmedia-data.sfo2.digitaloceanspaces.com/elxn/elxn2024/elxn24-rest-results.csv';
 
+const partyNames = ['Conservative', 'NDP', 'Green', 'Independent', 'Other'];
 
 function assignIndyParty(d, metricName) {
 	let party;
 	switch (d[metricName]) {
+		case 'Conservative Party':
+			party = 'Conservative';
+			break;
+		case 'BC NDP':
+			party = 'NDP';
+			break;
+		case 'BC Green Party':
+			party = 'Green';
+			break;
 		case 'Independent':
-			party = 'Independent/Unaffiliated';
+			party = 'Independent';
 			break;
 		case '':
-			party = 'Independent/Unaffiliated';
+			party = 'Independent';
 			break;
 		case ' ':
-			party = 'Independent/Unaffiliated';
+			party = 'Independent';
 			break;
 		default:
-			party = d[metricName];
+			party = 'Other';
 			break;
 	}
 
@@ -42,11 +52,20 @@ function joinPartyVotes(leadPartyData, allCandidates) {
 			pivotWider({
 				namesFrom: 'party',
 				valuesFrom: 'Popular Vote Percentage'
+			}),
+			// if there's no results for a party, mark as 0
+			mutate({
+				...partyNames.reduce((acc, party) => {
+					acc[party] = d => d[party] || 0;
+					return acc
+				}, {})
 			})
 		);
 
 		votesList = [...votesList, ...edVotes];
 	});
+
+	console.log(votesList)
 
 	// join party popVote to leading party 
 	const joinedData = tidy(
@@ -129,9 +148,7 @@ async function processMapData(data, leadParty, metricName) {
 	);
 
 	// add back the full list of candidates
-	const joinedData = joinPartyVotes(leadParty, partyVoteLookup);
-
-	return joinedData;
+	return joinPartyVotes(leadParty, partyVoteLookup);
 }
 
 async function processSeatData(data, metricName) {
@@ -175,10 +192,10 @@ async function init(url) {
 	const leadParty = getLeadParty(results);
 	
 	// process data for total seat countz
-	const seatData = processSeatData(leadParty, 'leadingParty');
+	const seatData = await processSeatData(leadParty, 'leadingParty');
 
 	// process riding level data for map
-	const mapData = processMapData(results, leadParty, 'Affiliation');
+	const mapData = await processMapData(results, leadParty, 'Affiliation');
 
 
 	// save all our data
