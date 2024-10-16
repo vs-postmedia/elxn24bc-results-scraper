@@ -216,7 +216,8 @@ async function init(url) {
 		// filter out empty rows
 		.then(data => data.data.filter(d => d['Electoral District Code'].length > 0))
 		.catch(err => {
-			console.error(err)
+			console.error(err.message);
+			process.exit(1);
 		});
 	
 	// get lead party/candidate for each riding
