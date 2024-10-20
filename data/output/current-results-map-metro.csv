@@ -12,13 +12,13 @@ CHN,Chilliwack North,Conservative,Heather Maahs,55.05,15 of 16,Conservative lead
 CQB,Coquitlam-Burke Mountain,NDP,Jodie Wickens,50.65,12 of 13,NDP lead,50.65,49.35,0,0,0
 CQM,Coquitlam-Maillardville,NDP,Jennifer Blatherwick,51.56,16 of 17,NDP lead,51.56,39.85,6.29,2.3,0
 DLN,Delta North,NDP,Ravi Kahlon,52.56,12 of 12,NDP lead,52.56,40.38,6.19,0,0.87
-DLS,Delta South,Conservative,Ian Paton,55.08,14 of 15,Conservative lead,44.92,55.08,0,0,0
+DLS,Delta South,Conservative,Ian Paton,55.16,14 of 15,Conservative lead,44.84,55.16,0,0,0
 FRN,Fraser-Nicola,Conservative,Tony Luck,54.67,31 of 32,Conservative lead,36.18,54.67,9.15,0,0
 LLA,Langley-Abbotsford,Conservative,Harman Bhangu,55.84,16 of 17,Conservative lead,33.55,55.84,5.54,4.3,0.76
 LWG,Langley-Walnut Grove,Conservative,Misty Van Popta,49.73,14 of 15,Conservative lead,44.62,49.73,5.1,0.55,0
 LWI,Langley-Willowbrook,Conservative,Jody Toor,48.51,14 of 15,Conservative lead,44.1,48.51,7.39,0,0
 MAE,Maple Ridge East,Conservative,Lawrence Mok,47.49,16 of 17,Conservative lead,46.18,47.49,6.33,0,0
-MAP,Maple Ridge-Pitt Meadows,NDP,Lisa Beare,54.7,15 of 16,NDP lead,54.7,45.3,0,0,0
+MAP,Maple Ridge-Pitt Meadows,NDP,Lisa Beare,54.69,15 of 16,NDP lead,54.69,45.31,0,0,0
 NMC,New Westminster-Coquitlam,NDP,Jennifer Whiteside,58.92,13 of 14,NDP lead,58.92,30.03,11.05,0,0
 NVL,North Vancouver-Lonsdale,NDP,Bowinn Ma,64.62,17 of 18,NDP lead,64.62,35.38,0,0,0
 NVS,North Vancouver-Seymour,NDP,Susie Chant,52.62,20 of 20,NDP lead,52.62,35.92,5.61,5.85,0
@@ -34,7 +34,7 @@ SRF,Surrey-Fleetwood,NDP,Jagrup Brar,48.23,12 of 13,NDP lead,48.23,45.28,6.48,0,
 SRG,Surrey-Guildford,Conservative,Honveer Singh Randhawa,47.14,11 of 12,Conservative lead,46.58,47.14,4.3,1.97,0
 SRN,Surrey-Newton,NDP,Jessie Sunner,50.81,12 of 13,NDP lead,50.81,43.28,0,1.24,2.43
 SUN,Surrey North,Conservative,Mandeep Dhaliwal,51.19,11 of 12,Conservative lead,42.83,51.19,4.14,0.8,1.03
-SUP,Surrey-Panorama,Conservative,Bryan Tepper,49.89,10 of 10,Conservative lead,47.78,49.89,0,0,2.33
+SUP,Surrey-Panorama,Conservative,Bryan Tepper,49.89,10 of 10,Conservative lead,47.78,49.89,0,0,2.32
 SUR,Surrey-Serpentine River,Conservative,Linda Hepner,49.92,13 of 13,Conservative lead,47.25,49.92,0,2.83,0
 SUS,Surrey South,Conservative,Brent Chapman,58.98,12 of 13,Conservative lead,41.02,58.98,0,0,0
 SWR,Surrey-White Rock,Conservative,Trevor Halford,53.94,15 of 16,Conservative lead,43.54,53.94,0,0,2.52
@@ -42,7 +42,7 @@ VFV,Vancouver-Fraserview,NDP,George Chow,56.99,15 of 16,NDP lead,56.99,36.85,6.1
 VHA,Vancouver-Hastings,NDP,Niki Sharma,64.2,15 of 16,NDP lead,64.2,24.39,10.72,0.69,0
 VKE,Vancouver-Kensington,NDP,Mable Elmore,60.65,11 of 12,NDP lead,60.65,31.8,7.54,0,0
 VLA,Vancouver-Langara,NDP,Sunita Dhir,48.17,11 of 11,NDP lead,48.17,46.33,5.5,0,0
-VLM,Vancouver-Little Mountain,NDP,Christine Boyle,61.85,14 of 15,NDP lead,61.85,30.76,7.39,0,0
+VLM,Vancouver-Little Mountain,NDP,Christine Boyle,61.84,14 of 15,NDP lead,61.84,30.76,7.4,0,0
 VNP,Vancouver-Point Grey,NDP,David Eby,56.76,13 of 14,NDP lead,56.76,34.64,8.6,0,0
 VNQ,Vancouver-Quilchena,Conservative,Dallas Brodie,51.82,14 of 14,Conservative lead,38.58,51.82,7.83,1.77,0
 VNR,Vancouver-Renfrew,NDP,Adrian Dix,62.97,13 of 14,NDP lead,62.97,30.92,6.11,0,0
@@ -51,6 +51,6 @@ VNT,Vancouver-Strathcona,NDP,Joan Phillip,68.99,16 of 17,NDP lead,68.99,17.1,12.
 VNW,Vancouver-West End,NDP,Spencer Chandra Herbert,63,12 of 13,NDP lead,63,27.36,8.95,0.7,0
 VNY,Vancouver-Yaletown,NDP,Terry Yung,49.49,12 of 13,NDP lead,49.49,43.65,6.86,0,0
 VTB,Victoria-Beacon Hill,NDP,Grace Lore,47.21,16 of 17,NDP lead,47.21,19.23,33.56,0,0
-VTS,Victoria-Swan Lake,NDP,Nina Krieger,55.81,15 of 16,NDP lead,55.81,20.39,23.18,0,0.62
-WVC,West Vancouver-Capilano,Conservative,Lynne Block,46.67,13 of 14,Conservative lead,27.02,46.67,5.53,20.78,0
+VTS,Victoria-Swan Lake,NDP,Nina Krieger,55.8,15 of 16,NDP lead,55.8,20.38,23.2,0,0.62
+WVC,West Vancouver-Capilano,Conservative,Lynne Block,46.67,13 of 14,Conservative lead,27.03,46.67,5.53,20.77,0
 WVS,West Vancouver-Sea to Sky,Green,Jeremy Valeriote,38.19,17 of 18,Green lead,26.22,35.59,38.19,0,0
