@@ -13,7 +13,7 @@ const url = 'https://electionsbcenr.blob.core.windows.net/electionsbcenr/GE-2024
 // const url = 'https://vs-postmedia-data.sfo2.digitaloceanspaces.com/elxn/elxn2024/elxn24-rest-results.csv';
 
 const partyNames = ['Conservative', 'NDP', 'Green', 'Independent', 'Other'];
-const crdRidings = ['CWV','ESC','JFM','LAO','LFH','OBG','SAN','SAS','VTB','VTS','MPR'];
+const crdRidings = ['CRC', 'CWV','ESC','JFM','LAO','LFH','NOI', 'OBG','SAN','SAS','VTB','VTS','MPR'];
 const metroRidings = ['ABM','ABS','ABW','BNC','BNE','BNN','BNO','BNS','CHC','CHN','CQB','CQM','DLN','DLS','LLA','LWG','LWI','MAE','MAP','NMC','NVL','NVS','POC','POM','RCB','RCC','RCQ','RCS','SRC','SRD','SRF','SRG','SRN','SUN','SUP','SUR','SUS','SWR','VFV','VHA','VKE','VLA','VLM','VNP','VNQ','VNR','VNS','VNT','VNW','VNY','VTB','VTS','WVC','WVS','FRN'];
 
 function assignIndyParty(d, metricName) {
