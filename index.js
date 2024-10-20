@@ -145,7 +145,7 @@ function getLeadParty(data) {
 		'leadingCandidate': d => d.leadingParty !== undefined ? d.leadingParty['Candidate\'s Ballot Name'] : null,
 		'leadingParty': d => d.leadingParty !== undefined ? d.leadingParty['Affiliation'] : null,
 		'leadingPopVote': d => d.maxVote,
-		'colorCategory': d => assignMapColorCategory(d.leadingParty, d['Initital Count Status'])
+		'colorCategory': d => assignMapColorCategory(d.leadingParty, d['Initial Count Status'])
 	  }),
 	  select([
 		'Electoral District Code',
