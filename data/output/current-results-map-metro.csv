@@ -4,8 +4,8 @@ ABS,Abbotsford South,Conservative,Bruce Banman,61.93,18 of 18,Conservative leadi
 ABW,Abbotsford West,Conservative,Korky Neufeld,58.81,16 of 16,Conservative leading/elected,36.4,58.81,0,4.79,0
 BNC,Burnaby Centre,NDP,Anne Kang,56.93,11 of 11,NDP leading/elected,56.93,43.07,0,0,0
 BNE,Burnaby East,NDP,Reah Arora,51.5,12 of 12,NDP leading/elected,51.5,40.88,7.62,0,0
-BNN,Burnaby-New Westminster,NDP,Raj Chouhan,59.77,13 of 13,NDP leading/elected,59.77,34.87,0,5.37,0
-BNO,Burnaby North,NDP,Janet Routledge,52.97,13 of 13,NDP leading/elected,52.97,43.26,0,3.77,0
+BNN,Burnaby-New Westminster,NDP,Raj Chouhan,59.77,13 of 13,NDP leading/elected,59.77,34.86,0,5.37,0
+BNO,Burnaby North,NDP,Janet Routledge,52.97,13 of 13,NDP leading/elected,52.97,43.27,0,3.77,0
 BNS,Burnaby South-Metrotown,NDP,Paul Choi,49.23,13 of 13,NDP leading/elected,49.23,41.76,6.21,1.86,0
 CHC,Chilliwack-Cultus Lake,Conservative,A'aliya Warbus,55.06,15 of 15,Conservative leading/elected,44.94,55.06,0,0,0
 CHN,Chilliwack North,Conservative,Heather Maahs,55.05,16 of 16,Conservative leading/elected,37.26,55.05,5.43,2.27,0
@@ -16,7 +16,7 @@ DLS,Delta South,Conservative,Ian Paton,55.19,15 of 15,Conservative leading/elect
 FRN,Fraser-Nicola,Conservative,Tony Luck,54.68,32 of 32,Conservative leading/elected,36.16,54.68,9.16,0,0
 LLA,Langley-Abbotsford,Conservative,Harman Bhangu,55.85,17 of 17,Conservative leading/elected,33.55,55.85,5.54,4.3,0.76
 LWG,Langley-Walnut Grove,Conservative,Misty Van Popta,49.72,15 of 15,Conservative leading/elected,44.62,49.72,5.12,0.55,0
-LWI,Langley-Willowbrook,Conservative,Jody Toor,48.5,15 of 15,Conservative leading/elected,44.1,48.5,7.39,0,0
+LWI,Langley-Willowbrook,Conservative,Jody Toor,48.51,15 of 15,Conservative leading/elected,44.1,48.51,7.38,0,0
 MAE,Maple Ridge East,Conservative,Lawrence Mok,47.49,17 of 17,Conservative leading/elected,46.18,47.49,6.32,0,0
 MAP,Maple Ridge-Pitt Meadows,NDP,Lisa Beare,54.69,16 of 16,NDP leading/elected,54.69,45.31,0,0,0
 NMC,New Westminster-Coquitlam,NDP,Jennifer Whiteside,58.92,14 of 14,NDP leading/elected,58.92,30.03,11.06,0,0
@@ -37,7 +37,7 @@ SUN,Surrey North,Conservative,Mandeep Dhaliwal,51.19,12 of 12,Conservative leadi
 SUP,Surrey-Panorama,Conservative,Bryan Tepper,49.87,10 of 10,Conservative leading/elected,47.81,49.87,0,0,2.32
 SUR,Surrey-Serpentine River,Conservative,Linda Hepner,49.93,13 of 13,Conservative leading/elected,47.23,49.93,0,2.83,0
 SUS,Surrey South,Conservative,Brent Chapman,59.11,13 of 13,Conservative leading/elected,40.89,59.11,0,0,0
-SWR,Surrey-White Rock,Conservative,Trevor Halford,52.49,16 of 16,Conservative leading/elected,45.13,52.49,0,0,2.38
+SWR,Surrey-White Rock,Conservative,Trevor Halford,52.48,16 of 16,Conservative leading/elected,45.14,52.48,0,0,2.38
 VFV,Vancouver-Fraserview,NDP,George Chow,56.98,16 of 16,NDP leading/elected,56.98,36.86,6.16,0,0
 VHA,Vancouver-Hastings,NDP,Niki Sharma,64.07,16 of 16,NDP leading/elected,64.07,24.47,10.76,0.71,0
 VKE,Vancouver-Kensington,NDP,Mable Elmore,60.63,12 of 12,NDP leading/elected,60.63,31.83,7.54,0,0
@@ -49,8 +49,8 @@ VNR,Vancouver-Renfrew,NDP,Adrian Dix,62.98,14 of 14,NDP leading/elected,62.98,30
 VNS,Vancouver-South Granville,NDP,Brenda Bailey,64.04,16 of 16,NDP leading/elected,64.04,25.24,10.72,0,0
 VNT,Vancouver-Strathcona,NDP,Joan Phillip,68.82,17 of 17,NDP leading/elected,68.82,17.25,12.25,0,1.68
 VNW,Vancouver-West End,NDP,Spencer Chandra Herbert,62.94,13 of 13,NDP leading/elected,62.94,27.4,8.96,0.7,0
-VNY,Vancouver-Yaletown,NDP,Terry Yung,49.4,13 of 13,NDP leading/elected,49.4,43.71,6.88,0,0
+VNY,Vancouver-Yaletown,NDP,Terry Yung,49.4,13 of 13,NDP leading/elected,49.4,43.72,6.88,0,0
 VTB,Victoria-Beacon Hill,NDP,Grace Lore,47.24,17 of 17,NDP leading/elected,47.24,19.22,33.54,0,0
 VTS,Victoria-Swan Lake,NDP,Nina Krieger,55.82,16 of 16,NDP leading/elected,55.82,20.33,23.23,0,0.62
-WVC,West Vancouver-Capilano,Conservative,Lynne Block,46.88,14 of 14,Conservative leading/elected,26.96,46.88,5.51,20.65,0
+WVC,West Vancouver-Capilano,Conservative,Lynne Block,46.89,14 of 14,Conservative leading/elected,26.96,46.89,5.51,20.65,0
 WVS,West Vancouver-Sea to Sky,Green,Jeremy Valeriote,38.15,18 of 18,Green leading/elected,26.19,35.66,38.15,0,0
