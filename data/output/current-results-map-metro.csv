@@ -1,7 +1,7 @@
 Electoral District Code,Electoral District Name,leadingParty,leadingCandidate,leadingPopVote,FinalTotals,colorCategory,NDP,Conservative,Green,Independent,Other
 ABM,Abbotsford-Mission,Conservative,Reann Gasper,55.66,16 of 16,Conservative,44.34,55.66,0,0,0
 ABS,Abbotsford South,Conservative,Bruce Banman,61.93,18 of 18,Conservative,34.84,61.93,0,3.23,0
-ABW,Abbotsford West,Conservative,Korky Neufeld,58.81,16 of 16,Conservative,36.41,58.81,0,4.79,0
+ABW,Abbotsford West,Conservative,Korky Neufeld,58.81,16 of 16,Conservative,36.4,58.81,0,4.79,0
 BNC,Burnaby Centre,NDP,Anne Kang,56.93,11 of 11,NDP,56.93,43.07,0,0,0
 BNE,Burnaby East,NDP,Reah Arora,51.48,12 of 12,NDP,51.48,40.89,7.62,0,0
 BNN,Burnaby-New Westminster,NDP,Raj Chouhan,59.77,13 of 13,NDP,59.77,34.86,0,5.37,0
@@ -18,14 +18,14 @@ LLA,Langley-Abbotsford,Conservative,Harman Bhangu,55.85,17 of 17,Conservative,33
 LWG,Langley-Walnut Grove,Conservative,Misty Van Popta,49.72,15 of 15,Conservative,44.61,49.72,5.12,0.55,0
 LWI,Langley-Willowbrook,Conservative,Jody Toor,48.5,15 of 15,Conservative,44.12,48.5,7.38,0,0
 MAE,Maple Ridge East,Conservative,Lawrence Mok,47.5,17 of 17,Conservative,46.18,47.5,6.32,0,0
-MAP,Maple Ridge-Pitt Meadows,NDP,Lisa Beare,54.68,16 of 16,NDP,54.68,45.32,0,0,0
+MAP,Maple Ridge-Pitt Meadows,NDP,Lisa Beare,54.67,16 of 16,NDP,54.67,45.33,0,0,0
 NMC,New Westminster-Coquitlam,NDP,Jennifer Whiteside,58.9,14 of 14,NDP,58.9,30.05,11.04,0,0
 NVL,North Vancouver-Lonsdale,NDP,Bowinn Ma,64.61,18 of 18,NDP,64.61,35.39,0,0,0
 NVS,North Vancouver-Seymour,NDP,Susie Chant,52.63,20 of 20,NDP,52.63,35.89,5.63,5.85,0
 POC,Port Coquitlam,NDP,Mike Farnworth,53.61,18 of 18,NDP,53.61,39.01,6.42,0,0.96
 POM,Port Moody-Burquitlam,NDP,Rick Glumac,51.73,19 of 19,NDP,51.73,40.81,7.46,0,0
 RCB,Richmond-Bridgeport,Conservative,Teresa Wat,58.37,14 of 14,Conservative,34.61,58.37,3.18,0.73,0
-RCC,Richmond Centre,Conservative,Hon Chan,52.23,12 of 12,Conservative,36.53,52.23,0,6.35,0
+RCC,Richmond Centre,Conservative,Hon Chan,52.23,12 of 12,Conservative,36.52,52.23,0,6.35,0
 RCQ,Richmond-Queensborough,Conservative,Steve Kooner,51.2,15 of 15,Conservative,43.82,51.2,0,3.67,0
 RCS,Richmond-Steveston,NDP,Kelly Greene,44.18,15 of 15,NDP,44.18,42.27,3.43,10.12,0
 SRC,Surrey City Centre,NDP,Amna Shah,46.23,12 of 12,NDP,46.23,45.55,6.07,1.11,1.03
@@ -37,9 +37,9 @@ SUN,Surrey North,Conservative,Mandeep Dhaliwal,51.19,12 of 12,Conservative,42.83
 SUP,Surrey-Panorama,Conservative,Bryan Tepper,49.87,10 of 10,Conservative,47.8,49.87,0,0,2.32
 SUR,Surrey-Serpentine River,Conservative,Linda Hepner,49.93,13 of 13,Conservative,47.23,49.93,0,2.83,0
 SUS,Surrey South,Conservative,Brent Chapman,59.12,13 of 13,Conservative,40.88,59.12,0,0,0
-SWR,Surrey-White Rock,Conservative,Trevor Halford,52.48,16 of 16,Conservative,45.14,52.48,0,0,2.38
+SWR,Surrey-White Rock,Conservative,Trevor Halford,52.49,16 of 16,Conservative,45.14,52.49,0,0,2.38
 VFV,Vancouver-Fraserview,NDP,George Chow,56.98,16 of 16,NDP,56.98,36.86,6.16,0,0
-VHA,Vancouver-Hastings,NDP,Niki Sharma,64.06,16 of 16,NDP,64.06,24.47,10.75,0.71,0
+VHA,Vancouver-Hastings,NDP,Niki Sharma,64.07,16 of 16,NDP,64.07,24.47,10.75,0.71,0
 VKE,Vancouver-Kensington,NDP,Mable Elmore,60.63,12 of 12,NDP,60.63,31.83,7.54,0,0
 VLA,Vancouver-Langara,NDP,Sunita Dhir,48.11,11 of 11,NDP,48.11,46.4,5.49,0,0
 VLM,Vancouver-Little Mountain,NDP,Christine Boyle,61.92,15 of 15,NDP,61.92,30.73,7.35,0,0
@@ -47,10 +47,10 @@ VNP,Vancouver-Point Grey,NDP,David Eby,56.75,14 of 14,NDP,56.75,34.64,8.61,0,0
 VNQ,Vancouver-Quilchena,Conservative,Dallas Brodie,51.83,14 of 14,Conservative,38.58,51.83,7.82,1.77,0
 VNR,Vancouver-Renfrew,NDP,Adrian Dix,62.97,14 of 14,NDP,62.97,30.92,6.11,0,0
 VNS,Vancouver-South Granville,NDP,Brenda Bailey,64.04,16 of 16,NDP,64.04,25.24,10.72,0,0
-VNT,Vancouver-Strathcona,NDP,Joan Phillip,68.86,17 of 17,NDP,68.86,17.23,12.24,0,1.68
+VNT,Vancouver-Strathcona,NDP,Joan Phillip,68.85,17 of 17,NDP,68.85,17.23,12.24,0,1.68
 VNW,Vancouver-West End,NDP,Spencer Chandra Herbert,62.93,13 of 13,NDP,62.93,27.4,8.97,0.7,0
 VNY,Vancouver-Yaletown,NDP,Terry Yung,49.4,13 of 13,NDP,49.4,43.72,6.88,0,0
 VTB,Victoria-Beacon Hill,NDP,Grace Lore,47.24,17 of 17,NDP,47.24,19.21,33.54,0,0
 VTS,Victoria-Swan Lake,NDP,Nina Krieger,55.82,16 of 16,NDP,55.82,20.33,23.23,0,0.62
-WVC,West Vancouver-Capilano,Conservative,Lynne Block,46.9,14 of 14,Conservative,26.96,46.9,5.51,20.62,0
-WVS,West Vancouver-Sea to Sky,Green,Jeremy Valeriote,38.15,18 of 18,Green,26.19,35.66,38.15,0,0
+WVC,West Vancouver-Capilano,Conservative,Lynne Block,46.9,14 of 14,Conservative,26.96,46.9,5.51,20.63,0
+WVS,West Vancouver-Sea to Sky,Green,Jeremy Valeriote,38.16,18 of 18,Green,26.19,35.65,38.16,0,0
