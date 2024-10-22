@@ -49,19 +49,19 @@ function assignMapColorCategory(party, status) {
 
 	switch (party) {
 		case 'Conservative Party':
-			colorCategory = status !== 'Complete' ? 'Conservative lead': "Conservative";
+			colorCategory = status !== 'Complete' ? 'Conservative lead': "Conservative leading/elected";
 			break;
 		case 'BC NDP':
-			colorCategory = status !== 'Complete' ? 'NDP lead': "NDP";
+			colorCategory = status !== 'Complete' ? 'NDP lead': "NDP leading/elected";
 			break;
 		case 'BC Green Party':
-			colorCategory = status !== 'Complete' ? "Green lead": 'Green';
+			colorCategory = status !== 'Complete' ? "Green lead": 'Green leading/elected';
 			break;
 		case 'Independent':
-			colorCategory = status !== 'Complete' ? "Independent lead": 'Independent';
+			colorCategory = status !== 'Complete' ? "Independent lead": 'Independent leading/elected';
 			break;
 		default:
-			colorCategory = status !== 'Complete' ? "Other lead": 'Other';
+			colorCategory = status !== 'Complete' ? "Other lead": 'Other leading/elected';
 			break;
 	}
 
@@ -145,7 +145,7 @@ function getLeadParty(data) {
 		'leadingCandidate': d => d.leadingParty !== undefined ? d.leadingParty['Candidate\'s Ballot Name'] : null,
 		'leadingParty': d => d.leadingParty !== undefined ? d.leadingParty['Affiliation'] : null,
 		'leadingPopVote': d => d.maxVote,
-		'colorCategory': d => assignMapColorCategory(d.leadingParty, d['Initial Count Status'])
+		'colorCategory': d => assignMapColorCategory(d.leadingParty, d['Initital Count Status'])
 	  }),
 	  select([
 		'Electoral District Code',
