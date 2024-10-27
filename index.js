@@ -9,8 +9,8 @@ const mapOutputFile = `./data/output/current-results-map`;
 const seatsOutputFile = `./data/output/current-results-seats`;
 const crdOutputFile = `./data/output/current-results-map-crd`;
 const metroOutputFile = `./data/output/current-results-map-metro`;
-// const url = 'https://electionsbcenr.blob.core.windows.net/electionsbcenr/GE-2024-10-19_Candidate.csv'; // URL to scrape
-const url = 'https://electionsbcenr.blob.core.windows.net/electionsbcenr/GE-2024-10-26_Candidate.csv'; // URL to scrape
+const url = 'https://electionsbcenr.blob.core.windows.net/electionsbcenr/GE-2024-10-19_Candidate.csv'; // URL to scrape
+// const url = 'https://electionsbcenr.blob.core.windows.net/electionsbcenr/GE-2024-10-26_Candidate.csv'; // URL to scrape
 // const url = 'https://vs-postmedia-data.sfo2.digitaloceanspaces.com/elxn/elxn2024/elxn24-rest-results.csv';
 
 const partyNames = ['Conservative', 'NDP', 'Green', 'Independent', 'Other'];
