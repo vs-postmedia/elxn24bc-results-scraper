@@ -55,19 +55,19 @@ function assignMapColorCategory(party, status) {
 			break;
 		case 'BC NDP':
 			// colorCategory = status === 'Complete' ? 'NDP': "NDP leading/elected";
-			coloCategory = 'NDP'
+			colorCategory = 'NDP'
 			break;
 		case 'BC Green Party':
 			// colorCategory = status === 'Complete' ? "Green": 'Green leading/elected';
-			coloCategory = 'Green'
+			colorCategory = 'Green'
 			break;
 		case 'Independent':
 			// colorCategory = status === 'Complete' ? "Independent": 'Independent leading/elected';
-			coloCategory = "Independent"
+			colorCategory = "Independent"
 			break;
 		default:
 			// colorCategory = status === 'Complete' ? "Other": 'Other leading/elected';
-			coloCategory = 'Other'
+			colorCategory = 'Other'
 			break;
 	}
 
