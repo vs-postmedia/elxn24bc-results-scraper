@@ -4,22 +4,22 @@
 "ABW","Abbotsford West","Conservative","Korky Neufeld",61.62,32.8,"leads",,"Conservative lead","Conservative large",28.86,0,9.21,61.62,0,0
 "BNC","Burnaby Centre","Conservative","Joshua Domnich",47.25,5.5,"leads",,"Conservative lead","Conservative medium",41.77,0,2.53,47.25,0,8.13
 "BNE","Burnaby East","NDP","Rohini Reah Arora",44.34,1.5,"leads",,"NDP lead","NDP small",44.34,2.93,0,42.85,0,9.62
-"BNN","Burnaby-New Westminster","NDP","Raj Chouhan",53.53,10.7,"leads",,"NDP lead","NDP medium",53.53,0,0,42.87,0,0
-"BNO","Burnaby North","Conservative","Simon Chandler",46.36,4.5,"leads",,"Conservative lead","Conservative small",41.83,2.27,0,46.36,0,9.26
-"BNS","Burnaby South-Metrotown","Conservative","David Xie",44.37,0.5,"leads",,"Conservative lead","Conservative small",43.83,2.82,0,44.37,0,8.56
+"BNN","Burnaby-New Westminster","NDP","Raj Chouhan",53.51,10.6,"leads",,"NDP lead","NDP medium",53.51,0,0,42.88,0,0
+"BNO","Burnaby North","Conservative","Simon Chandler",46.36,4.5,"leads",,"Conservative lead","Conservative small",41.84,2.27,0,46.36,0,9.26
+"BNS","Burnaby South-Metrotown","Conservative","David Xie",44.32,0.5,"leads",,"Conservative lead","Conservative small",43.87,2.83,0,44.32,0,8.56
 "CHC","Chilliwack-Cultus Lake","Conservative","A'aliya Warbus",59.94,20.3,"leads",,"Conservative lead","Conservative large",39.68,0,0,59.94,0,0
 "CHN","Chilliwack North","Conservative","Heather Maahs",59.3,26.3,"leads",,"Conservative lead","Conservative large",33.01,0,7.48,59.3,0,0
 "CQB","Coquitlam-Burke Mountain","Conservative","Ryan Peterson",52.59,13.5,"leads",,"Conservative lead","Conservative medium",39.05,0,2.17,52.59,0,5.98
-"CQM","Coquitlam-Maillardville","Conservative","Matt Liang",49.51,8.1,"leads",,"Conservative lead","Conservative medium",41.37,0,0,49.51,0,8.93
+"CQM","Coquitlam-Maillardville","Conservative","Matt Liang",49.22,7.5,"leads",,"Conservative lead","Conservative medium",41.68,0,0,49.22,0,8.9
 "DLN","Delta North","Conservative","Monica Mohan",53.41,13,"leads",,"Conservative lead","Conservative medium",40.45,0,5.85,53.41,0,0
 "DLS","Delta South","Conservative","Ian Paton",59.69,31.1,"leads",,"Conservative lead","Conservative large",28.58,3.29,0,59.69,0,8.29
 "FRN","Fraser-Nicola","Conservative","Tony Luck",58.29,29.8,"leads",,"Conservative lead","Conservative large",28.46,0,0,58.29,0,13.06
 "LLA","Langley-Abbotsford","Conservative","Harman Bhangu",61.66,38,"leads",,"Conservative lead","Conservative large",23.61,4.59,0,61.66,1.36,8.51
 "LWG","Langley-Walnut Grove","Conservative","Misty Van Popta",57.01,25.6,"leads",,"Conservative lead","Conservative large",31.44,0,4.25,57.01,0,7.22
-"LWI","Langley-Willowbrook","Conservative","Jody Toor",52.59,16.9,"leads",,"Conservative lead","Conservative large",35.7,3.69,0,52.59,0,7.81
+"LWI","Langley-Willowbrook","Conservative","Jody Toor",52.61,16.9,"leads",,"Conservative lead","Conservative large",35.68,3.69,0,52.61,0,7.81
 "MAE","Maple Ridge East","Conservative","Lawrence Mok",53.66,16.5,"leads",,"Conservative lead","Conservative large",37.15,0,0,53.66,1.43,7.58
 "MAP","Maple Ridge-Pitt Meadows","Conservative","Doug Morneau",48.45,4.2,"leads",,"Conservative lead","Conservative small",44.25,3.43,3.6,48.45,0,0
-"NMC","New Westminster-Coquitlam","NDP","Jennifer Whiteside",50.11,15.9,"leads",,"NDP lead","NDP large",50.11,0,0,34.19,0,15.19
+"NMC","New Westminster-Coquitlam","NDP","Jennifer Whiteside",50.11,15.9,"leads",,"NDP lead","NDP large",50.11,0,0,34.18,0,15.19
 "NVL","North Vancouver-Lonsdale","NDP","Bowinn Ma",46.64,5,"leads",,"NDP lead","NDP medium",46.64,0,0,41.64,0,11.53
 "NVS","North Vancouver-Seymour","Conservative","Lynne Block",46.7,9.6,"leads",,"Conservative lead","Conservative medium",37.08,0,4.96,46.7,0,10.93
 "POC","Port Coquitlam","NDP","Mike Farnworth",45.2,1.8,"leads",,"NDP lead","NDP small",45.2,0,0,43.39,1.26,8.65
@@ -46,7 +46,7 @@
 "VLM","Vancouver-Little Mountain","NDP","Christine Boyle",48.96,15.3,"leads",,"NDP lead","NDP large",48.96,0,0,33.68,0,17.13
 "VNP","Vancouver-Point Grey","NDP","David Eby",42.83,3.4,"leads",,"NDP lead","NDP small",42.83,0,3.53,39.43,0,14.11
 "VNQ","Vancouver-Quilchena","Conservative","Carson Binda",54.57,27.6,"leads",,"Conservative lead","Conservative large",26.92,3.92,5.04,54.57,0,9.41
-"VNR","Vancouver-Renfrew","NDP","Adrian Dix",54.16,23.1,"leads",,"NDP lead","NDP large",54.16,0,2.19,31.04,0,12.23
+"VNR","Vancouver-Renfrew","NDP","Adrian Dix",54.15,23.1,"leads",,"NDP lead","NDP large",54.15,0,2.19,31.04,0,12.23
 "VNS","Vancouver-South Granville","NDP","Lara Honrado",47.09,17.7,"leads",,"NDP lead","NDP large",47.09,0.83,3.3,29.36,0,19.29
 "VNT","Vancouver-Strathcona","NDP","Amanda Burrows",54.27,25,"leads",,"NDP lead","NDP large",54.27,0,0,14.68,1.27,29.26
 "VNW","Vancouver-West End","NDP","Spencer Chandra Herbert",50.95,20.1,"leads",,"NDP lead","NDP large",50.95,0,0,30.86,0,18.02
