@@ -1,0 +1,87 @@
+[
+    {
+        "id": "e7f436c0e31f28fd",
+        "type": "tab",
+        "label": "ElxnBC 2026 results scraper",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3d1ba7f87b449fe0",
+        "type": "inject",
+        "z": "e7f436c0e31f28fd",
+        "name": "Schedule run",
+        "props": [],
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "a09f69cfead37ac6"
+            ]
+        ]
+    },
+    {
+        "id": "a09f69cfead37ac6",
+        "type": "exec",
+        "z": "e7f436c0e31f28fd",
+        "command": "/Users/ngriffiths/.nvm/versions/node/v24.22.0/bin/node /Users/ngriffiths/stories/elxn26bc-results-scraper/index.js",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Fetch results data",
+        "x": 290,
+        "y": 340,
+        "wires": [
+            [
+                "0cce094f15713bca"
+            ],
+            [
+                "8b8f859cddd91af9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "0cce094f15713bca",
+        "type": "debug",
+        "z": "e7f436c0e31f28fd",
+        "name": "stout",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8b8f859cddd91af9",
+        "type": "debug",
+        "z": "e7f436c0e31f28fd",
+        "name": "stderr",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 360,
+        "wires": []
+    }
+]
